@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>game</title>
+    <link rel="stylesheet" href="./styles/game.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="headLine">
+            <div class="headbox">
+                <div class="maintitle">GAME</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="game__wrapper">
+            <div class="gameBox">
+                <img src="./images/word.png">
+                <div class="gamebox__font">끝말잇기</div>
+                <div class="exampleBox">
+                    <div class="example__title">제시어 :</div>
+                    <div id="word" class="word"> 뉴비즈코드</div>
+                </div>
+                <div class ="inputBox">
+                    <input id="input__Box" type="text" placeholder="단어를 입력하세요.">
+                    <button class = "buttonStyle" onclick="function()">검색</button>
+                </div>
+                <div id="result" class="resultText">결과!</div>
+            </div>
+            <div class="gameBox">
+                <img src="./images/lotto.png">
+                <div class="gamebox__font">LOTTO</div>
+                <div class="exampleBox">버튼을 누르세요.</div>
+                <div id = "randomNum" class="randomBox">3 5 10 24 30 34</div>
+                <button onclick="function()" class="buttonStyle2">Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

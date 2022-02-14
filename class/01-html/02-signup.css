@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    box-sizing: border-box;
+}
+
+.mainbox{
+    width: 670px;
+    height: 960px;
+    margin: 60px 625px 60px 625px;
+    background: #FFFFFF;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+/* 여기는 타이틀 */
+.titlebox{
+    width: 466px;
+    height: 94px;
+    margin : 72px 104px 60px 100px
+}
+.title-font{
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: #0068FF;
+}
+
+/* 여기는 인풋박스 */
+.inputbox{
+    width: 466px;
+    margin: 0px 100px 50px 100px;
+}
+.input-font{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+}
+
+.box-type1{
+    width: 466px;
+    height: 23px;
+    border-color:#0068FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 21px;
+}
+
+.box-type{
+    width: 466px;
+    height: 23px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 21px;
+}
+
+/* 여기는 젠더선택 */
+.select-gender{
+    margin: 0px 265px 50px 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.genderbox{
+    width: 20px;
+    height: 19px;
+    background: gray;
+    border : 1px solid #D2D2D2;
+}
+
+.genderfont{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 8px;
+}
+
+/* 체크박스 */
+
+.checkbox-box{
+    margin: 0px 104px 30px 112px;
+    display:flex;
+    justify-content: row;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right : 8px;
+}
+.checkbox-font{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/* 버튼스타일 */
+.buttonbox{
+    margin:0px 100px 70px 100px;
+}
+
+.buttonstyle{
+    width: 470px;
+    height: 75px; 
+    background: #FFFFFF;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0068FF;
+}
+
+.highlight{
+    margin: 0px 100px 30px 100px;
+    width : 470px
+}
