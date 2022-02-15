@@ -33,27 +33,36 @@ function pressbutton(){
     let submit2 = document.getElementById("submit2")
     submit2.disabled=false;
     randomNum.textContent=String(Math.floor(Math.random()*100000)).padStart(6,"0")
-
+    getTokenTimer()
+}
+    
+    
     let time=180
-   
-    setInterval(function(){
+    let timer
+function getTokenTimer(){
+        timer = setInterval(() =>{
         if(time>=0){
             const min = String(Math.floor(time/60)).padStart(2,"0")
             const sec = String(time % 60).padStart(2,"0")
             document.getElementById("countdown").innerText=min+":"+sec;
             time=time-1
         } else{
-            submit2.disabled=true;
-            randomNum.innerText="000000"
+            document.getElementById("submit2").disabled=true;
+            document.getElementById("randomNum").innerText="000000"
             document.getElementById("countdown").innerText="3:00"
+            clearInterval(timer)
         }
     },1000)
 }
 
+
 function pressbutton2(){
+    clearInterval(timer)
     let submit2 = document.getElementById("submit2")
+    document.getElementById("randomNum").innerText="000000"
     submit2.innerText="인증완료"
     submit2.disabled=true
+    document.getElementById("countdown").innerText="03:00"
     document.getElementById("signup").disabled=false
     alert("인증이 완료되었습니다.")
 }
